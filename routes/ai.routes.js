@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import * as aiController from '../contoller/ai.contoller.js';
+import * as aiController from '../controllers/ai.controller.js';
 const router = Router();
 
 
 
-router.get('/get-results', aiController.getResult);
+router.post('/get-results', aiController.getResult);
 
 
 
